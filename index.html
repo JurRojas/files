@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reon Digital - Soluciones Web para tu Negocio</title>
+    <title>REVON - Soluciones Web para tu Negocio</title>
+    <meta name="description" content="Páginas web claras, modernas y pensadas para presentar tus servicios, responder dudas y generar confianza las 24 horas.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Navegación principal">
         <div class="navbar-container">
-            <div class="navbar-logo">
-                <span class="logo-text">Reon</span>
-                <span class="logo-highlight">Digital</span>
-            </div>
-            
-            <button class="nav-toggle" id="navToggle">☰</button>
-            
+            <a class="navbar-logo" href="index.html" aria-label="REVON">
+                <span class="logo-text">REV</span>
+                <span class="logo-highlight">ON</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-controls="navLinks" aria-expanded="false">☰</button>
+
             <ul class="nav-links" id="navLinks">
+                <li><a href="#beneficios">Beneficios</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#proceso">Proceso</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-            
+
             <div class="navbar-actions">
-                <div class="lang-selector">
-                    <button class="lang-btn active">ES</button>
-                    <button class="lang-btn">EN</button>
+                <div class="lang-selector" aria-label="Selector de idioma">
+                    <button class="lang-btn active" type="button">ES</button>
+                    <button class="lang-btn" type="button">EN</button>
                 </div>
-                <a href="https://wa.me/34666777888" class="btn btn-whatsapp">
-                    <span>💬</span> WhatsApp
+                <a href="https://wa.me/2721103644" class="btn btn-whatsapp">
+                    <span aria-hidden="true">💬</span> WhatsApp
                 </a>
             </div>
         </div>
@@ -46,56 +48,74 @@
             </div>
 
             <h1 class="hero-title">
-                Tu negocio también merece una buena 
-                <span class="highlight-serif">entrada en internet</span>
+                Tu negocio digital,
+                <span class="highlight-serif">siempre abierto</span>
             </h1>
 
             <p class="hero-subtitle">
-                Creo páginas web claras, modernas y pensadas para que tus clientes te conozcan, 
-                confíen en tu trabajo y te contacten fácil, aunque no estén frente a tu local.
+                Dedica tu tiempo a lo importante. Tu página se encarga de presentar tus servicios,
+                responder las dudas más comunes y generar confianza en futuros clientes las 24 horas.
             </p>
 
             <div class="hero-cta">
-                <button class="btn btn-primary" onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})">
-                    Cuéntame sobre tu negocio
-                </button>
-                <button class="btn btn-secondary" onclick="document.getElementById('proceso').scrollIntoView({behavior: 'smooth'})">
-                    Ver cómo trabajo
-                </button>
+                <a class="btn btn-primary" href="#contacto">Cuéntame sobre tu negocio</a>
             </div>
 
             <p class="hero-microcopy">
-                Respuesta rápida · Hecho a tu medida · Para negocios locales
+                Disponible 24 horas · Información clara · Contacto fácil
             </p>
 
-            <!-- Elementos flotantes -->
-            <div class="float-element element-1">📊</div>
-            <div class="float-element element-2">🎯</div>
-            <div class="float-element element-3">✨</div>
+            <div class="float-element element-1" aria-hidden="true">📊</div>
+            <div class="float-element element-2" aria-hidden="true">🎯</div>
+            <div class="float-element element-3" aria-hidden="true">✨</div>
         </div>
     </section>
 
-    <!-- METRICS SECTION -->
-    <section class="metrics">
+    <!-- WHY WEB SECTION -->
+    <section class="content-section why-web">
         <div class="container">
+            <div class="content-copy">
+                <h2>¿Por qué tener una página web?</h2>
+                <p>Tus clientes buscan información antes de tomar una decisión.</p>
+                <p>Quieren saber quién eres, qué haces, cómo trabajas y cómo pueden contactarte.</p>
+                <p>Una página web bien construida permite que encuentren esas respuestas rápidamente, incluso cuando tú no estás disponible para responder mensajes o llamadas.</p>
+                <p>Es como tener una sucursal digital abierta todos los días.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="metrics" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que una página puede hacer por tu negocio</h2>
+                <p>Claridad, confianza y contacto en el momento correcto</p>
+            </div>
+
             <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-icon">🌍</div>
-                    <h3>Negocio Disponible 24/7</h3>
-                    <p>Tu página web trabaja por ti mientras duermes. Tus clientes pueden conocerte, ver servicios y contactarte en cualquier momento.</p>
-                </div>
+                <article class="metric-card">
+                    <div class="metric-icon" aria-hidden="true">🤝</div>
+                    <h3>Genera confianza</h3>
+                    <p>Una presencia profesional ayuda a que las personas te conozcan mejor antes de contactarte.</p>
+                </article>
 
-                <div class="metric-card">
-                    <div class="metric-icon">📞</div>
-                    <h3>Más Formas de Contactarte</h3>
-                    <p>Botones de WhatsApp, formularios, correo, teléfono. Haz fácil que tus clientes potenciales se comuniquen contigo.</p>
-                </div>
+                <article class="metric-card">
+                    <div class="metric-icon" aria-hidden="true">💡</div>
+                    <h3>Responde preguntas frecuentes</h3>
+                    <p>Horarios, servicios, ubicación, formas de contacto y detalles importantes disponibles en un solo lugar.</p>
+                </article>
 
-                <div class="metric-card">
-                    <div class="metric-icon">💎</div>
-                    <h3>Información Clara y Fácil</h3>
-                    <p>Diseño limpio que explica qué haces, cómo lo haces y por qué eres la mejor opción. Sin ruido, sin confusión.</p>
-                </div>
+                <article class="metric-card">
+                    <div class="metric-icon" aria-hidden="true">🌍</div>
+                    <h3>Disponible las 24 horas</h3>
+                    <p>Tu negocio sigue presente aunque estés ocupado atendiendo clientes o realizando otras actividades.</p>
+                </article>
+
+                <article class="metric-card">
+                    <div class="metric-icon" aria-hidden="true">💬</div>
+                    <h3>Facilita el contacto</h3>
+                    <p>Menos tiempo explicando lo mismo y más tiempo atendiendo personas realmente interesadas.</p>
+                </article>
             </div>
         </div>
     </section>
@@ -104,52 +124,38 @@
     <section class="services" id="servicios">
         <div class="container">
             <div class="section-header">
-                <h2>¿Qué puedo crear para ti?</h2>
-                <p>Soluciones adaptadas a tu negocio local</p>
+                <h2>Servicios</h2>
+                <p>Soluciones adaptadas a la etapa digital de tu negocio</p>
             </div>
 
             <div class="services-grid">
-                <div class="service-card">
+                <article class="service-card">
                     <div class="service-number">01</div>
-                    <h3>Landing Page & Web</h3>
-                    <p>Página web moderna, clara y optimizada. Diseñada para que tus clientes entiendan qué ofreces y se animen a contactarte.</p>
-                    <div class="service-tag">Presencia online</div>
-                </div>
+                    <h3>Landing Pages</h3>
+                    <p>Páginas enfocadas en presentar un servicio, producto o negocio de forma clara y directa.</p>
+                    <div class="service-tag">Claridad</div>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <div class="service-number">02</div>
-                    <h3>Google Maps & SEO Local</h3>
-                    <p>Presencia en Google Maps, optimización para búsquedas locales. Que tus clientes te encuentren cuando busquen en tu zona.</p>
-                    <div class="service-tag">Visibilidad local</div>
-                </div>
+                    <h3>Sitios Web para Negocios</h3>
+                    <p>Una presencia digital completa para mostrar quién eres, qué haces y cómo pueden encontrarte.</p>
+                    <div class="service-tag">Presencia digital</div>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <div class="service-number">03</div>
-                    <h3>Automatizaciones Simples</h3>
-                    <p>Formularios conectados a WhatsApp, emails automáticos, recordatorios. Tu negocio funciona más eficiente sin hacer más trabajo.</p>
-                    <div class="service-tag">Eficiencia</div>
-                </div>
+                    <h3>Catálogos Digitales</h3>
+                    <p>Organiza y presenta tus productos o servicios de manera profesional.</p>
+                    <div class="service-tag">Productos y servicios</div>
+                </article>
 
-                <div class="service-card">
+                <article class="service-card">
                     <div class="service-number">04</div>
-                    <h3>Contacto por WhatsApp</h3>
-                    <p>Botones y formularios conectados directamente a tu WhatsApp. Recibe consultas al instante sin perder ni una.</p>
-                    <div class="service-tag">Comunicación</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-number">05</div>
-                    <h3>Correo con tu Dominio</h3>
-                    <p>Email profesional con tu nombre de dominio. Proyecta confianza y profesionalismo desde el primer mensaje.</p>
-                    <div class="service-tag">Profesionalismo</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-number">06</div>
-                    <h3>Optimización Visual</h3>
-                    <p>Fotos profesionales, descripción clara de servicios, testimonios de clientes. Todo lo que tu negocio necesita para brillar.</p>
-                    <div class="service-tag">Imagen</div>
-                </div>
+                    <h3>Presencia Digital</h3>
+                    <p>Configuración de correo corporativo, Google Maps y herramientas necesarias para fortalecer tu negocio en internet.</p>
+                    <div class="service-tag">Herramientas clave</div>
+                </article>
             </div>
         </div>
     </section>
@@ -158,35 +164,88 @@
     <section class="process" id="proceso">
         <div class="container">
             <div class="section-header">
-                <h2>Cómo Trabajamos</h2>
-                <p>Tres pasos simples para tu presencia digital</p>
+                <h2>Cómo trabajo</h2>
+                <p>Un proceso claro para convertir tu información en una presencia digital funcional</p>
             </div>
 
             <div class="process-steps">
-                <div class="step">
+                <article class="step">
                     <div class="step-number">01</div>
-                    <h3>Me cuentas sobre tu negocio</h3>
-                    <p>Una conversación simple donde me explicas qué haces, a quién le vendes, cuál es tu diferencia. Así entiendo tu negocio y tus clientes.</p>
-                    <div class="step-icon">💬</div>
-                </div>
+                    <h3>Conozco tu negocio</h3>
+                    <p>Primero entiendo qué haces, quiénes son tus clientes y qué objetivos quieres alcanzar.</p>
+                    <div class="step-icon" aria-hidden="true">💬</div>
+                </article>
 
-                <div class="step-arrow">→</div>
+                <div class="step-arrow" aria-hidden="true">→</div>
 
-                <div class="step">
+                <article class="step">
                     <div class="step-number">02</div>
-                    <h3>Diseño tu sucursal digital</h3>
-                    <p>Creo una página web que funciona como tu oficina virtual. Limpia, clara, pensada para que tus clientes entiendan lo que ofreces y se animen a contactarte.</p>
-                    <div class="step-icon">🎨</div>
-                </div>
+                    <h3>Organizo la información</h3>
+                    <p>Definimos qué necesita ver una persona para confiar en tu negocio.</p>
+                    <div class="step-icon" aria-hidden="true">📋</div>
+                </article>
 
-                <div class="step-arrow">→</div>
+                <div class="step-arrow" aria-hidden="true">→</div>
 
-                <div class="step">
+                <article class="step">
                     <div class="step-number">03</div>
-                    <h3>Publicamos y conectamos</h3>
-                    <p>Tu página web vive en internet. Configuramos Google Maps, WhatsApp, emails automáticos. Todo listo para que empieces a recibir clientes.</p>
-                    <div class="step-icon">🚀</div>
-                </div>
+                    <h3>Diseño y desarrollo</h3>
+                    <p>Construyo una página clara, moderna y enfocada en la experiencia del visitante.</p>
+                    <div class="step-icon" aria-hidden="true">🎨</div>
+                </article>
+
+                <div class="step-arrow" aria-hidden="true">→</div>
+
+                <article class="step">
+                    <div class="step-number">04</div>
+                    <h3>Publicación</h3>
+                    <p>Tu sitio queda listo para que cualquier persona pueda conocer tu negocio desde internet.</p>
+                    <div class="step-icon" aria-hidden="true">🚀</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE SECTION -->
+    <section class="content-section value-section">
+        <div class="container">
+            <div class="content-copy">
+                <h2>Más que una página bonita</h2>
+                <p>No se trata únicamente de tener una página.</p>
+                <p>Se trata de tener un espacio donde tus clientes puedan entender rápidamente qué haces, por qué deberían elegirte y cómo pueden ponerse en contacto contigo.</p>
+                <p>Cada proyecto se desarrolla pensando en las personas que visitarán el sitio y en las necesidades reales de tu negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p>Respuestas rápidas para empezar con claridad</p>
+            </div>
+
+            <div class="faq-grid">
+                <article class="faq-card">
+                    <h3>¿Necesito tener todo preparado?</h3>
+                    <p>No. Podemos organizar juntos la información necesaria para construir la página.</p>
+                </article>
+
+                <article class="faq-card">
+                    <h3>¿Funcionará en celulares?</h3>
+                    <p>Sí. La experiencia móvil es una prioridad.</p>
+                </article>
+
+                <article class="faq-card">
+                    <h3>¿Puedo actualizarla después?</h3>
+                    <p>Sí. Dependiendo del proyecto, podemos dejar herramientas para realizar cambios o ayudarte con futuras actualizaciones.</p>
+                </article>
+
+                <article class="faq-card">
+                    <h3>¿Cuánto tiempo tarda?</h3>
+                    <p>Depende del alcance del proyecto, pero una landing suele completarse en pocos días una vez que contamos con la información necesaria.</p>
+                </article>
             </div>
         </div>
     </section>
@@ -195,12 +254,46 @@
     <section class="final-cta" id="contacto">
         <div class="container">
             <div class="cta-content">
-                <h2>Haz que tu negocio se vea tan bien en <span class="highlight-serif">internet</span> como en persona</h2>
-                <p>Cuéntame sobre tu negocio y juntos creamos tu presencia digital.</p>
-                <a href="https://wa.me/34666777888" class="btn btn-primary btn-large">
-                    💬 Quiero empezar
-                </a>
+                <h2>Cuéntame sobre <span class="highlight-serif">tu proyecto</span></h2>
+                <p>Si tienes una idea, un negocio o un servicio que quieres mostrar en internet, conversemos. Explícame qué necesitas y encontraremos la mejor forma de construir una presencia digital que represente tu trabajo.</p>
             </div>
+
+            <form class="contact-form" id="revonWhatsAppForm">
+                <div class="form-grid">
+                    <label class="form-field" for="nombre">
+                        <span>Nombre</span>
+                        <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+                    </label>
+
+                    <label class="form-field" for="negocio">
+                        <span>Nombre del negocio</span>
+                        <input id="negocio" name="negocio" type="text" autocomplete="organization" required>
+                    </label>
+
+                    <label class="form-field" for="giro">
+                        <span>Giro del negocio</span>
+                        <input id="giro" name="giro" type="text" required>
+                    </label>
+
+                    <label class="form-field" for="servicio">
+                        <span>Servicio de interés</span>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="Landing Pages">Landing Pages</option>
+                            <option value="Sitios Web para Negocios">Sitios Web para Negocios</option>
+                            <option value="Catálogos Digitales">Catálogos Digitales</option>
+                            <option value="Presencia Digital">Presencia Digital</option>
+                        </select>
+                    </label>
+
+                    <label class="form-field form-field-full" for="mensaje">
+                        <span>Mensaje o necesidad principal</span>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </label>
+                </div>
+
+                <button class="btn btn-primary btn-large" type="submit">Enviar por WhatsApp</button>
+            </form>
         </div>
     </section>
 
@@ -209,25 +302,103 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h4>Reon Digital</h4>
-                    <p>Soluciones web para negocios locales</p>
+                    <h4>REVON</h4>
+                    <p>Presencia digital clara para negocios locales</p>
                 </div>
                 <div class="footer-links">
+                    <a href="#beneficios">Beneficios</a>
                     <a href="#servicios">Servicios</a>
                     <a href="#proceso">Proceso</a>
+                    <a href="#faq">FAQ</a>
                     <a href="#contacto">Contacto</a>
                 </div>
                 <div class="footer-social">
-                    <a href="https://wa.me/34666777888" class="social-link">WhatsApp</a>
+                    <a href="https://wa.me/2721103644" class="social-link">WhatsApp</a>
                     <a href="https://instagram.com" class="social-link">Instagram</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Reon Digital. Todos los derechos reservados.</p>
+                <p>&copy; 2024 REVON. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <a
+        id="floatingWhatsApp"
+        class="floating-whatsapp"
+        href="https://wa.me/2721103644?text=Hola%2C%20me%20interesa%20agendar%20una%20cita%20para%20un%20proyecto."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Abrir WhatsApp"
+    >
+        <svg class="floating-whatsapp-icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12.031 0C5.383 0 0 5.383 0 12.031c0 2.124.553 4.195 1.604 6.012L.116 23.884l6.015-1.576A11.96 11.96 0 0012.031 24c6.648 0 12.031-5.383 12.031-12.031S18.679 0 12.031 0zm0 21.968c-1.802 0-3.568-.485-5.118-1.404l-.367-.217-3.805.997 1.018-3.708-.238-.378A9.92 9.92 0 012.031 12.03c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 9.938-10 9.938zm5.495-7.518c-.301-.151-1.783-.881-2.059-.982-.276-.101-.477-.151-.678.151-.201.302-.779.982-.955 1.183-.176.201-.352.226-.653.075-.301-.151-1.272-.469-2.423-1.498-.895-.799-1.5-1.787-1.676-2.088-.176-.301-.019-.464.132-.614.136-.135.301-.352.452-.528.151-.176.201-.301.301-.502.101-.201.05-.377-.025-.528-.075-.151-.678-1.634-.929-2.237-.245-.589-.495-.509-.678-.518-.176-.009-.377-.009-.578-.009s-.528.075-.804.377c-.276.302-1.055 1.03-1.055 2.513s1.08 2.915 1.231 3.116c.151.201 2.124 3.242 5.143 4.544.718.31 1.278.495 1.716.634.721.229 1.378.197 1.895.119.581-.088 1.783-.729 2.034-1.433.251-.704.251-1.307.176-1.433-.075-.126-.276-.201-.577-.352z"></path>
+        </svg>
+    </a>
+
+    <script>
+        const navToggle = document.getElementById("navToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        const closeMenu = () => {
+            navLinks?.classList.remove("active");
+            navToggle?.setAttribute("aria-expanded", "false");
+        };
+
+        navToggle?.addEventListener("click", () => {
+            const isOpen = navLinks?.classList.toggle("active") ?? false;
+            navToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        navLinks?.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", closeMenu);
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                closeMenu();
+            }
+        });
+
+        const WHATSAPP_NUMBER = "2721103644";
+        const contactForm = document.getElementById("revonWhatsAppForm");
+
+        contactForm?.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const nombre = String(formData.get("nombre") ?? "").trim();
+            const negocio = String(formData.get("negocio") ?? "").trim();
+            const giro = String(formData.get("giro") ?? "").trim();
+            const servicio = String(formData.get("servicio") ?? "").trim();
+            const mensaje = String(formData.get("mensaje") ?? "").trim();
+
+            const whatsappMessage = `Hola, quiero información sobre una página web para mi negocio.
+
+Nombre: ${nombre}
+Negocio: ${negocio}
+Giro: ${giro}
+Servicio de interés: ${servicio}
+Mensaje: ${mensaje}`;
+
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, "_blank", "noopener,noreferrer");
+        });
+
+        const FLOATING_WHATSAPP_NUMBER = "2721103644";
+        const FLOATING_WHATSAPP_MESSAGE = "Hola, me interesa agendar una cita para un proyecto.";
+
+        const createWhatsAppLink = (mensaje) => {
+            const numero = typeof INFO_NEGOCIO !== "undefined" && INFO_NEGOCIO.whatsapp
+                ? INFO_NEGOCIO.whatsapp
+                : FLOATING_WHATSAPP_NUMBER;
+
+            return `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+        };
+
+        document
+            .getElementById("floatingWhatsApp")
+            ?.setAttribute("href", createWhatsAppLink(FLOATING_WHATSAPP_MESSAGE));
+    </script>
 </body>
 </html>

@@ -1,0 +1,40 @@
+---
+const questions = [
+  {
+    question: "¿Necesito tener todo preparado?",
+    answer: "No. Podemos organizar juntos la información necesaria para construir la página.",
+  },
+  {
+    question: "¿Funcionará en celulares?",
+    answer: "Sí. La experiencia móvil es una prioridad.",
+  },
+  {
+    question: "¿Puedo actualizarla después?",
+    answer:
+      "Sí. Dependiendo del proyecto, podemos dejar herramientas para realizar cambios o ayudarte con futuras actualizaciones.",
+  },
+  {
+    question: "¿Cuánto tiempo tarda?",
+    answer:
+      "Depende del alcance del proyecto, pero una landing suele completarse en pocos días una vez que contamos con la información necesaria.",
+  },
+];
+---
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <h2>Preguntas Frecuentes</h2>
+      <p>Respuestas rápidas para empezar con claridad</p>
+    </div>
+
+    <div class="faq-grid">
+      {questions.map((item) => (
+        <article class="faq-card">
+          <h3>{item.question}</h3>
+          <p>{item.answer}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
