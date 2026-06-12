@@ -1,0 +1,45 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Me cuentas sobre tu negocio",
+    text: "Una conversación simple donde me explicas qué haces, a quién le vendes, cuál es tu diferencia. Así entiendo tu negocio y tus clientes.",
+    icon: "💬",
+  },
+  {
+    number: "02",
+    title: "Diseño tu sucursal digital",
+    text: "Creo una página web que funciona como tu oficina virtual. Limpia, clara, pensada para que tus clientes entiendan lo que ofreces y se animen a contactarte.",
+    icon: "🎨",
+  },
+  {
+    number: "03",
+    title: "Publicamos y conectamos",
+    text: "Tu página web vive en internet. Configuramos Google Maps, WhatsApp, emails automáticos. Todo listo para que empieces a recibir clientes.",
+    icon: "🚀",
+  },
+];
+---
+
+<section class="process" id="proceso">
+  <div class="container">
+    <div class="section-header">
+      <h2>Cómo Trabajamos</h2>
+      <p>Tres pasos simples para tu presencia digital</p>
+    </div>
+
+    <div class="process-steps">
+      {steps.map((step, index) => (
+        <>
+          <article class="step">
+            <div class="step-number">{step.number}</div>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+            <div class="step-icon" aria-hidden="true">{step.icon}</div>
+          </article>
+          {index < steps.length - 1 && <div class="step-arrow" aria-hidden="true">→</div>}
+        </>
+      ))}
+    </div>
+  </div>
+</section>

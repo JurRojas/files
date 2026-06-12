@@ -1,0 +1,60 @@
+---
+const services = [
+  {
+    number: "01",
+    title: "Landing Page & Web",
+    text: "Página web moderna, clara y optimizada. Diseñada para que tus clientes entiendan qué ofreces y se animen a contactarte.",
+    tag: "Presencia online",
+  },
+  {
+    number: "02",
+    title: "Google Maps & SEO Local",
+    text: "Presencia en Google Maps, optimización para búsquedas locales. Que tus clientes te encuentren cuando busquen en tu zona.",
+    tag: "Visibilidad local",
+  },
+  {
+    number: "03",
+    title: "Automatizaciones Simples",
+    text: "Formularios conectados a WhatsApp, emails automáticos, recordatorios. Tu negocio funciona más eficiente sin hacer más trabajo.",
+    tag: "Eficiencia",
+  },
+  {
+    number: "04",
+    title: "Contacto por WhatsApp",
+    text: "Botones y formularios conectados directamente a tu WhatsApp. Recibe consultas al instante sin perder ni una.",
+    tag: "Comunicación",
+  },
+  {
+    number: "05",
+    title: "Correo con tu Dominio",
+    text: "Email profesional con tu nombre de dominio. Proyecta confianza y profesionalismo desde el primer mensaje.",
+    tag: "Profesionalismo",
+  },
+  {
+    number: "06",
+    title: "Optimización Visual",
+    text: "Fotos profesionales, descripción clara de servicios, testimonios de clientes. Todo lo que tu negocio necesita para brillar.",
+    tag: "Imagen",
+  },
+];
+---
+
+<section class="services" id="servicios">
+  <div class="container">
+    <div class="section-header">
+      <h2>¿Qué puedo crear para ti?</h2>
+      <p>Soluciones adaptadas a tu negocio local</p>
+    </div>
+
+    <div class="services-grid">
+      {services.map((service) => (
+        <article class="service-card">
+          <div class="service-number">{service.number}</div>
+          <h3>{service.title}</h3>
+          <p>{service.text}</p>
+          <div class="service-tag">{service.tag}</div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

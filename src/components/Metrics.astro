@@ -1,0 +1,33 @@
+---
+const metrics = [
+  {
+    icon: "🌍",
+    title: "Negocio Disponible 24/7",
+    text: "Tu página web trabaja por ti mientras duermes. Tus clientes pueden conocerte, ver servicios y contactarte en cualquier momento.",
+  },
+  {
+    icon: "📞",
+    title: "Más Formas de Contactarte",
+    text: "Botones de WhatsApp, formularios, correo, teléfono. Haz fácil que tus clientes potenciales se comuniquen contigo.",
+  },
+  {
+    icon: "💎",
+    title: "Información Clara y Fácil",
+    text: "Diseño limpio que explica qué haces, cómo lo haces y por qué eres la mejor opción. Sin ruido, sin confusión.",
+  },
+];
+---
+
+<section class="metrics">
+  <div class="container">
+    <div class="metrics-grid">
+      {metrics.map((metric) => (
+        <article class="metric-card">
+          <div class="metric-icon" aria-hidden="true">{metric.icon}</div>
+          <h3>{metric.title}</h3>
+          <p>{metric.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

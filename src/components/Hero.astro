@@ -1,0 +1,42 @@
+---
+const floatingElements = [
+  { className: "element-1", icon: "📊" },
+  { className: "element-2", icon: "🎯" },
+  { className: "element-3", icon: "✨" },
+];
+---
+
+<section class="hero">
+  <div class="hero-bg-gradient"></div>
+  <div class="container">
+    <div class="hero-tag">
+      <span class="tag-dot">•</span>
+      Soluciones digitales para negocios locales
+    </div>
+
+    <h1 class="hero-title">
+      Tu negocio también merece una buena
+      <span class="highlight-serif">entrada en internet</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      Creo páginas web claras, modernas y pensadas para que tus clientes te conozcan,
+      confíen en tu trabajo y te contacten fácil, aunque no estén frente a tu local.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#contacto">Cuéntame sobre tu negocio</a>
+      <a class="btn btn-secondary" href="#proceso">Ver cómo trabajo</a>
+    </div>
+
+    <p class="hero-microcopy">
+      Respuesta rápida · Hecho a tu medida · Para negocios locales
+    </p>
+
+    {floatingElements.map((item) => (
+      <div class={`float-element ${item.className}`} aria-hidden="true">
+        {item.icon}
+      </div>
+    ))}
+  </div>
+</section>
